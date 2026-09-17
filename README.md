@@ -1,8 +1,8 @@
 # Atendimento Hospitalar — PySpark
 
-Análise exploratória e estimativas de capacidade de atendimento hospitalar usando **PySpark**, com base no dataset [Hospital Patient Data](https://www.kaggle.com/datasets/abdulqaderasiirii/hospital-patient-data) do Kaggle.
+Análise exploratória e estimativas de capacidade de atendimento hospitalar usando **PySpark**, com base no dataset [Hospital Patient Data](https://www.kaggle.com/datasets/abdulqaderasiirii/hospital-patient-data) do Kaggle e no dataset complementar [`dataset/escala_medicos.csv`](dataset/escala_medicos.csv).
 
-O notebook [`atendimento-hospitalar.ipynb`](atendimento-hospitalar.ipynb) reproduz, usando PySpark (em vez de pandas puro), a análise de tempo de espera do notebook, e complementa com uma estimativa de dimensionamento de equipe usando `RandomForestClassifier` (scikit-learn).
+O notebook [`atendimento-hospitalar.ipynb`](atendimento-hospitalar.ipynb) reproduz, usando PySpark (em vez de pandas puro), a análise de tempo de espera do notebook, com estimativas de dimensionamento de equipe baseadas nos datasets do Kaggle e em [`dataset/escala_medicos.csv`](dataset/escala_medicos.csv).
 
 ## O que o notebook faz
 
@@ -13,8 +13,7 @@ O notebook [`atendimento-hospitalar.ipynb`](atendimento-hospitalar.ipynb) reprod
    - Estamos muito ocupados? Em quais horários/dias?
    - Quanto tempo os pacientes esperam antes do médico?
    - Que tipo de equipe precisamos e onde?
-4. **Estimativas com Machine Learning**: treina um `RandomForestClassifier` para identificar os fatores que mais influenciam horas de "alta espera", e estima quantos médicos adicionais seriam necessários para reduzir a espera em pelo menos 30%, junto com o impacto esperado em número de atendimentos e em `Consultation Revenue`.
-5. **Dataset complementar sintético**: [`dataset/escala_medicos.csv`](dataset/escala_medicos.csv) simula uma escala de médicos por data/hora (para fins de estudo, já que o dataset original não traz essa informação), usada para refinar as estimativas de dimensionamento de equipe.
+4. **Estimativas com Machine Learning**: treina um `RandomForestClassifier` usando apenas os dados do [Hospital Patient Data](https://www.kaggle.com/datasets/abdulqaderasiirii/hospital-patient-data) e de [`dataset/escala_medicos.csv`](dataset/escala_medicos.csv) para identificar os fatores que mais influenciam horas de "alta espera" e estimar quantos médicos adicionais seriam necessários para reduzir a espera em pelo menos 30%, junto com o impacto esperado em número de atendimentos e em `Consultation Revenue`.
 
 ## Visualizações
 

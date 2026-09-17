@@ -2,7 +2,7 @@
 
 Análise exploratória e estimativas de capacidade de atendimento hospitalar usando **PySpark**, com base no dataset [Hospital Patient Data](https://www.kaggle.com/datasets/abdulqaderasiirii/hospital-patient-data) do Kaggle.
 
-O notebook [`atendimento-hospitalar.ipynb`](atendimento-hospitalar.ipynb) reproduz, usando PySpark (em vez de pandas puro), a análise de tempo de espera do notebook [Hospital Wait Time](https://www.kaggle.com/code/abdulqaderasiirii/hospital-wait-time), e complementa com uma estimativa de dimensionamento de equipe usando `RandomForestClassifier` (scikit-learn).
+O notebook [`atendimento-hospitalar.ipynb`](atendimento-hospitalar.ipynb) reproduz, usando PySpark (em vez de pandas puro), a análise de tempo de espera do notebook, e complementa com uma estimativa de dimensionamento de equipe usando `RandomForestClassifier` (scikit-learn).
 
 ## O que o notebook faz
 

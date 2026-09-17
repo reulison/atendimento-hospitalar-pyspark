@@ -1,0 +1,16 @@
+# Python / virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Spark local runtime artifacts
+metastore_db/
+derby.log
+spark-warehouse/
+
+# OS / editor
+.DS_Store
+Thumbs.db

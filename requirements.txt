@@ -1,0 +1,8 @@
+pyspark>=3.5,<4.0
+pandas>=2.0
+numpy
+kagglehub
+scikit-learn
+plotly
+ipywidgets
+openpyxl
